@@ -1,4 +1,5 @@
-Feature: Addition of working class hero
+Feature: As Application allows the creation of a single working
+  class hero via API call.
 
   Scenario: TC-001 Addition of Single Working class hero
     Given I set Headers for request
