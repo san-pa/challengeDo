@@ -46,7 +46,7 @@ String baseUrl= "http://localhost:9997/login";
 
     @When("I navigate to baseurl in chrome browser for Bookkeeper")
     public void iNavigateToBaseurlInChromeBrowserForBookkeeper() throws IOException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\san.padmanabhan\\OneDrive - Accenture\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\san.padmanabhan\\OneDrive - Accenture\\Documents\\Projectwork\\Finalprj\\GovtechChallange\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
@@ -87,7 +87,7 @@ String baseUrl= "http://localhost:9997/login";
 
     @When("I navigate to baseurl in chrome browser Egress Tax Relief file process in progress")
     public void iNavigateToBaseurlInChromeBrowserEgressTaxReliefFileProcessInProgress() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\san.padmanabhan\\OneDrive - Accenture\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\san.padmanabhan\\OneDrive - Accenture\\Documents\\Projectwork\\Finalprj\\GovtechChallange\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);

@@ -80,6 +80,23 @@ public class HeroAction {
                 .body().statusCode(400);
 
     }
+
+    @Then("response is success with status {int}")
+    public void responseIsSuccessWithStatus(int arg0) {
+        
+    }
+
+    @Given("I am able to trigger getapi with params provided")
+    public void iAmAbleToTriggerGetapiWithParamsProvided() {
+
+        given().queryParam("natid","1")
+                .when().get("http://localhost:9997/api/v1/owe-money").
+                then().statusCode(200).log().all();
+    }
+
+    @When("send Get with natid value  accept numeric values for header")
+    public void sendGetWithNatidValueAcceptNumericValuesForHeader() {
+    }
 }
 
 

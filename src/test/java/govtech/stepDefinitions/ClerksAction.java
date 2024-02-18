@@ -32,7 +32,7 @@ String baseUrl= "http://localhost:9997/login";
     @When("I navigate to baseurl in chrome browser")
     public void i_navigate_to_baseurl_in_chrome_browser() throws Exception{
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\san.padmanabhan\\OneDrive - Accenture\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\san.padmanabhan\\OneDrive - Accenture\\Documents\\Projectwork\\Finalprj\\GovtechChallange\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized"); // open Browser in maximized mode
         options.addArguments("disable-infobars"); // disabling infobars
@@ -50,7 +50,7 @@ String baseUrl= "http://localhost:9997/login";
         driver.findElement(By.cssSelector("html > body > form > div:nth-of-type(3) > div:nth-of-type(2) > input")).click();
         driver.findElement(By.id("dropdownMenuButton2")).click();
         driver.findElement(By.cssSelector("html > body > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > ul > li:nth-of-type(2) > a")).click();
-        driver.findElement(By.cssSelector("input#upload-csv-file")).sendKeys("C:\\Users\\san.padmanabhan\\OneDrive - Accenture\\Documents\\Projectwork\\GovTechAssignment-master\\GovTechAssignment-master\\src\\test\\resources\\testdata\\working-hero.csv");
+        driver.findElement(By.cssSelector("input#upload-csv-file")).sendKeys("C:\\Users\\san.padmanabhan\\OneDrive - Accenture\\Documents\\Projectwork\\Finalprj\\GovtechChallange\\src\\test\\resources\\testdata\\data.csv");
         driver.findElement(By.cssSelector("html > body > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(3) > button")).click();
     }
 
@@ -59,7 +59,7 @@ String baseUrl= "http://localhost:9997/login";
 
     @Then("Clerks dashboard UI is shown")
     public void clerksDashboardUIIsShown() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\san.padmanabhan\\OneDrive - Accenture\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\san.padmanabhan\\OneDrive - Accenture\\Documents\\Projectwork\\Finalprj\\GovtechChallange\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized"); // open Browser in maximized mode
         options.addArguments("disable-infobars"); // disabling infobars
